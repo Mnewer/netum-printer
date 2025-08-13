@@ -6,7 +6,7 @@ Easy-to-use Python library for Netum Bluetooth thermal printers (NT-1809D and co
 
 - ✅ **Auto-discovery** - Automatically finds your Netum printer
 - ✅ **Simple API** - Clean, easy-to-use interface
-- ✅ **Cross-platform** - Works on Windows, Mac, Linux
+- ✅ **Windows support** - Optimized for Windows Bluetooth COM ports
 - ✅ **No drivers needed** - Uses standard Bluetooth serial connection
 - ✅ **Multiple printers** - Support for multiple connected printers
 
@@ -120,6 +120,11 @@ with NetumPrinter() as printer:
 2. Check Windows Bluetooth settings - printer should be "Paired" AND "Connected"
 3. Try unpairing and re-pairing the printer
 4. Restart the printer and try again
+
+### Platform Support
+- ✅ **Windows**: Full support with COM port auto-discovery
+- ❌ **macOS/iOS**: Not supported (macOS lacks serial backend for Bluetooth SPP)
+- ❓ **Linux**: May work but untested
 
 ### Connection Failed
 1. Close any other applications using the printer
